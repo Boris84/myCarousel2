@@ -6,10 +6,11 @@ body {
 	display: flex;
 	padding-top: 117px;
 	justify-content: center;
-	background: gray;
+	background: #BDB76B;
 }
 
 img {
 	max-width: 80%;
 	border: solid 4px #fff;
 }
+

@@ -22,6 +22,8 @@
   images[2] = 'polarbear.jpg';
   images[3] = 'turtles.jpg';
 
+
+
   // change image 
   const changeImg = () => {
   	document.slide.src = images[i];
@@ -31,11 +33,29 @@
   	} else {
   	  i = 0;
   	}
-
   	setTimeout("changeImg()", time);
   }
-
 window.onload = changeImg;
+
+
+
+  // cycle through images manually using keys a + d 
+  const handleInput = (event) => {
+   const key = event.key;
+    document.slide.src = images[i];
+      if (key === 'd' && i < images.length-1) {
+  	    i++; 
+  	  } if (key === 'a' && i < images.length-1) {
+  	  	
+  	  }
+   } 
+   document.addEventListener('keypress', handleInput);
+
+
+
+
+
+
 
 </script>
 
